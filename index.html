@@ -6,10 +6,7 @@
 
 <title>Elevate Digital Services</title>
 
-<!-- SEO -->
-<meta name="description" content="Elevate Digital Services - Website Development, Lead Generation, SDR Outreach, Appointment Setting Agency">
-<meta name="keywords" content="website developer Philippines, lead generation, SDR outreach, appointment setter, digital marketing agency">
-<meta name="author" content="Elevate Digital Services">
+<meta name="description" content="Website Development, Lead Generation, SDR Outreach, Appointment Setting Agency">
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -32,7 +29,6 @@ header{
   align-items:center;
   padding:18px 25px;
   background:#0f172a;
-  border-bottom:1px solid rgba(255,255,255,0.05);
 }
 
 /* BUTTON */
@@ -44,7 +40,10 @@ header{
   text-decoration:none;
   transition:0.3s;
 }
-.btn:hover{transform:scale(1.05);background:#1d4ed8;}
+.btn:hover{
+  transform:scale(1.05);
+  background:#1d4ed8;
+}
 
 /* HERO */
 .hero{
@@ -59,14 +58,10 @@ header{
 .hero h1{font-size:42px;margin-bottom:10px;}
 .hero p{color:#cbd5e1;margin-bottom:20px;}
 
-/* SECTIONS */
+/* SECTION */
 .section{
   padding:80px 20px;
   text-align:center;
-}
-
-.section h2{
-  margin-bottom:30px;
 }
 
 /* GRID */
@@ -83,21 +78,31 @@ header{
   background:#1e293b;
   padding:25px;
   border-radius:14px;
-  transition:0.3s;
-}
-.card:hover{
-  transform:translateY(-8px);
-  background:#263244;
 }
 
 /* PRICE */
 .price{
   color:#60a5fa;
-  font-size:24px;
+  font-size:22px;
   margin:10px 0;
 }
 
-/* CHATBOT */
+/* FORM */
+form{
+  max-width:500px;
+  margin:auto;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+input{
+  padding:12px;
+  border-radius:8px;
+  border:none;
+}
+
+/* CHAT */
 #chatbot{
   position:fixed;
   bottom:20px;
@@ -123,16 +128,6 @@ header{
   width:100%;
 }
 
-/* ANIMATION */
-.section,.card{
-  animation:fadeUp 0.8s ease forwards;
-}
-
-@keyframes fadeUp{
-  from{opacity:0;transform:translateY(20px);}
-  to{opacity:1;transform:translateY(0);}
-}
-
 /* FOOTER */
 footer{
   text-align:center;
@@ -150,18 +145,21 @@ footer{
   <h2>Elevate Digital Services</h2>
 
   <a class="btn" href="https://calendly.com/loiejanpabalate/30minher" target="_blank">
-    Book Call
+    Book Demo
   </a>
 </header>
 
 <!-- HERO -->
 <section class="hero">
-  <h1>We Build Systems That Generate Clients</h1>
-  <p>Websites • Leads • SDR Outreach • Automation • Appointment Setting</p>
+
+  <h1>We Help Businesses Get More Clients</h1>
+
+  <p>Websites • Leads • SDR Outreach • Appointment Setting</p>
 
   <a class="btn" href="https://calendly.com/loiejanpabalate/30minher" target="_blank">
-    Schedule Strategy Call
+    Schedule Call
   </a>
+
 </section>
 
 <!-- SERVICES -->
@@ -172,12 +170,12 @@ footer{
 
     <div class="card">
       <h3>Website Development</h3>
-      <p>High-converting business websites</p>
+      <p>High converting websites</p>
     </div>
 
     <div class="card">
       <h3>Lead Generation</h3>
-      <p>Daily qualified leads</p>
+      <p>We bring real clients</p>
     </div>
 
     <div class="card">
@@ -187,7 +185,7 @@ footer{
 
     <div class="card">
       <h3>Appointment Setting</h3>
-      <p>We book meetings for you</p>
+      <p>We book your calls</p>
     </div>
 
   </div>
@@ -202,11 +200,11 @@ footer{
     <div class="card">
       <h3>Starter</h3>
       <div class="price">$199</div>
-      <p>Landing page</p>
+      <p>Basic website</p>
     </div>
 
     <div class="card">
-      <h3>Growth</h3>
+      <h3>Business</h3>
       <div class="price">$499</div>
       <p>Website + leads</p>
     </div>
@@ -220,36 +218,38 @@ footer{
   </div>
 </section>
 
-<!-- QUALIFICATION -->
+<!-- LEAD FORM (MONEY SYSTEM) -->
 <section class="section">
-  <h2>Is This For You?</h2>
+  <h2>Get Free Strategy Plan</h2>
 
-  <div class="grid">
+  <form action="https://formsubmit.co/loiejanpabalate@gmail.com" method="POST">
 
-    <div class="card">
-      <h3>✔ Yes</h3>
-      <p>You want more clients</p>
-    </div>
+    <input type="text" name="name" placeholder="Your Name" required>
 
-    <div class="card">
-      <h3>✔ Yes</h3>
-      <p>You want automation</p>
-    </div>
+    <input type="email" name="email" placeholder="Your Email" required>
 
-    <div class="card">
-      <h3>❌ No</h3>
-      <p>You only want cheap work</p>
-    </div>
+    <input type="text" name="service" placeholder="What do you need?" required>
 
-  </div>
+    <button class="btn" type="submit">
+      Send Request
+    </button>
+
+  </form>
+
+  <p style="margin-top:15px;color:#94a3b8;">
+    We will contact you within 24 hours.
+  </p>
 </section>
 
-<!-- CTA -->
+<!-- CONTACT -->
 <section class="section">
-  <h2>Ready to Grow?</h2>
+  <h2>Contact</h2>
 
-  <a class="btn" href="https://calendly.com/loiejanpabalate/30minher" target="_blank">
-    Book Free Call
+  <p>Email: loiejanpabalate@gmail.com</p>
+  <p>WhatsApp: +63 951 591 5083</p>
+
+  <a class="btn" href="https://wa.me/639515915083" target="_blank">
+    Message on WhatsApp
   </a>
 </section>
 
