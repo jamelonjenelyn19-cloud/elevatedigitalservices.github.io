@@ -10,13 +10,14 @@
 
 <style>
 
-html {
-  scroll-behavior: smooth;
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Inter;
 }
 
 body{
-  margin:0;
-  font-family:Inter;
   background:#0b1220;
   color:white;
 }
@@ -29,59 +30,58 @@ header{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:20px;
+  padding:18px 30px;
   background:#0f172a;
+  border-bottom:1px solid rgba(255,255,255,0.05);
+}
+
+header h2{
+  font-size:18px;
+}
+
+/* BUTTON */
+.btn{
+  background:#2563eb;
+  color:white;
+  padding:12px 18px;
+  border-radius:10px;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:#1d4ed8;
+  transform:scale(1.05);
 }
 
 /* HERO */
 .hero{
   text-align:center;
   padding:120px 20px;
-  background-image:url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d');
+  background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+  url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d');
   background-size:cover;
   background-position:center;
-  position:relative;
-}
-
-.hero::before{
-  content:"";
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  background:rgba(0,0,0,0.6);
-}
-
-.hero h1, .hero p, .hero a{
-  position:relative;
-  z-index:2;
 }
 
 .hero h1{
-  font-size:48px;
+  font-size:42px;
+  margin-bottom:15px;
 }
 
 .hero p{
   color:#cbd5e1;
-  font-size:18px;
-}
-
-/* BUTTON */
-.btn{
-  display:inline-block;
-  margin-top:20px;
-  padding:14px 28px;
-  background:#2563eb;
-  color:white;
-  border-radius:10px;
-  text-decoration:none;
+  margin-bottom:25px;
 }
 
 /* SECTIONS */
 .section{
   padding:80px 20px;
   text-align:center;
+}
+
+.section h2{
+  margin-bottom:30px;
 }
 
 /* GRID */
@@ -91,7 +91,6 @@ header{
   gap:20px;
   max-width:1100px;
   margin:auto;
-  margin-top:40px;
 }
 
 /* CARD */
@@ -104,59 +103,45 @@ header{
 
 .card:hover{
   transform:translateY(-8px);
-  box-shadow:0 10px 30px rgba(0,0,0,0.4);
+  background:#263244;
 }
 
-/* PRICING HIGHLIGHT */
-.card h3{
-  color:#ffffff;
+/* PRICING */
+.price{
+  font-size:26px;
+  color:#60a5fa;
+  margin:10px 0;
 }
 
-/* CHATBOT */
+/* CHAT */
 .chatbot{
   position:fixed;
   bottom:20px;
   right:20px;
-  width:260px;
+  width:250px;
   background:#1e293b;
   padding:15px;
   border-radius:12px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.4);
 }
 
 .chatbot a{
   display:block;
   margin-top:10px;
-  background:#2563eb;
-  color:white;
-  text-align:center;
+  background:#25d366;
   padding:10px;
-  border-radius:8px;
+  text-align:center;
+  color:white;
   text-decoration:none;
-}
-
-/* ANIMATIONS */
-.section, .card {
-  animation: fadeInUp 0.8s ease both;
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity:0;
-    transform:translateY(30px);
-  }
-  to {
-    opacity:1;
-    transform:translateY(0);
-  }
+  border-radius:8px;
 }
 
 /* FOOTER */
 footer{
   text-align:center;
   padding:20px;
-  background:#0f172a;
   color:#94a3b8;
+  background:#0f172a;
+  margin-top:50px;
 }
 
 </style>
@@ -168,9 +153,9 @@ footer{
 <header>
   <h2>Elevate Digital Services</h2>
 
-<a class="btn" href="https://calendly.com/YOURNAME/strategy-call">
-  Book Demo
-</a>
+  <a class="btn" href="https://calendly.com/loiejanpabalate/30minher" target="_blank">
+    Book Demo
+  </a>
 </header>
 
 <!-- HERO -->
@@ -178,11 +163,11 @@ footer{
 
   <h1>We Build Systems That Grow Your Business</h1>
 
-  <p>Websites • Leads • SDR Outreach • Appointment Setting • Automation</p>
+  <p>Websites • Lead Generation • SDR Outreach • Appointment Setting</p>
 
- <a class="btn" href="https://calendly.com/loiejanpabalate/30minher" target="_blank">
-  Book Demo
-</a>
+  <a class="btn" href="https://calendly.com/loiejanpabalate/30minher" target="_blank">
+    Schedule a Call
+  </a>
 
 </section>
 
@@ -194,22 +179,22 @@ footer{
 
     <div class="card">
       <h3>Website Development</h3>
-      <p>Modern high-converting business websites.</p>
+      <p>High-converting business websites.</p>
     </div>
 
     <div class="card">
       <h3>Lead Generation</h3>
-      <p>Daily qualified leads for your business.</p>
+      <p>We generate qualified leads daily.</p>
     </div>
 
     <div class="card">
       <h3>SDR Outreach</h3>
-      <p>Cold outreach that gets sales calls.</p>
+      <p>Cold outreach that gets replies.</p>
     </div>
 
     <div class="card">
       <h3>Appointment Setting</h3>
-      <p>We book meetings directly into your calendar.</p>
+      <p>We book calls directly to your calendar.</p>
     </div>
 
   </div>
@@ -217,26 +202,26 @@ footer{
 
 <!-- PRICING -->
 <section class="section">
-  <h2>Simple Pricing</h2>
+  <h2>Pricing Plans</h2>
 
   <div class="grid">
 
-    <div class="card" style="border:1px solid #2563eb;">
+    <div class="card">
       <h3>Starter</h3>
-      <p style="font-size:24px;">$199</p>
-      <p>Landing page + contact form</p>
+      <div class="price">$199</div>
+      <p>Landing page + form</p>
     </div>
 
-    <div class="card" style="border:1px solid #2563eb;">
+    <div class="card">
       <h3>Business</h3>
-      <p style="font-size:24px;">$499</p>
-      <p>Website + lead system + SEO</p>
+      <div class="price">$499</div>
+      <p>Website + SEO + leads</p>
     </div>
 
-    <div class="card" style="border:1px solid #2563eb;">
+    <div class="card">
       <h3>Premium</h3>
-      <p style="font-size:24px;">$999+</p>
-      <p>Full automation + funnel system</p>
+      <div class="price">$999+</div>
+      <p>Full automation system</p>
     </div>
 
   </div>
@@ -244,23 +229,23 @@ footer{
 
 <!-- TRUST -->
 <section class="section">
-  <h2>Why Clients Work With Us</h2>
+  <h2>Why Choose Us</h2>
 
   <div class="grid">
 
     <div class="card">
       <h3>Fast Delivery</h3>
-      <p>Projects delivered in 3–7 days</p>
+      <p>3–7 day turnaround</p>
     </div>
 
     <div class="card">
       <h3>Real Results</h3>
-      <p>We focus on leads & conversions</p>
+      <p>Focused on conversions</p>
     </div>
 
     <div class="card">
-      <h3>24/7 Support</h3>
-      <p>We respond fast via WhatsApp</p>
+      <h3>Support</h3>
+      <p>We respond quickly</p>
     </div>
 
   </div>
@@ -269,15 +254,15 @@ footer{
 <!-- CTA -->
 <section class="section">
   <h2>Ready to Grow Your Business?</h2>
-  <a class="btn" href="https://wa.me/639515915083">
-    Contact Now
+  <a class="btn" href="https://calendly.com/loiejanpabalate/30minher" target="_blank">
+    Book Your Free Call
   </a>
 </section>
 
 <!-- CHATBOT -->
 <div class="chatbot">
-  <p><b>Business Assistant 🤖</b></p>
-  <p>Need help or a website?</p>
+  <p><b>Need Help?</b></p>
+  <p>Talk to us on WhatsApp</p>
   <a href="https://wa.me/639515915083">Start Chat</a>
 </div>
 
