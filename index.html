@@ -6,16 +6,16 @@
 
 <title>Elevate Digital Services</title>
 
+<!-- SEO -->
+<meta name="description" content="Elevate Digital Services - Website Development, Lead Generation, SDR Outreach, Appointment Setting Agency">
+<meta name="keywords" content="website developer Philippines, lead generation, SDR outreach, appointment setter, digital marketing agency">
+<meta name="author" content="Elevate Digital Services">
+
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 
-* {
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:Inter;
-}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Inter;}
 
 body{
   background:#0b1220;
@@ -30,13 +30,9 @@ header{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:18px 30px;
+  padding:18px 25px;
   background:#0f172a;
   border-bottom:1px solid rgba(255,255,255,0.05);
-}
-
-header h2{
-  font-size:18px;
 }
 
 /* BUTTON */
@@ -48,31 +44,20 @@ header h2{
   text-decoration:none;
   transition:0.3s;
 }
-
-.btn:hover{
-  background:#1d4ed8;
-  transform:scale(1.05);
-}
+.btn:hover{transform:scale(1.05);background:#1d4ed8;}
 
 /* HERO */
 .hero{
   text-align:center;
   padding:120px 20px;
-  background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+  background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
   url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d');
   background-size:cover;
   background-position:center;
 }
 
-.hero h1{
-  font-size:42px;
-  margin-bottom:15px;
-}
-
-.hero p{
-  color:#cbd5e1;
-  margin-bottom:25px;
-}
+.hero h1{font-size:42px;margin-bottom:10px;}
+.hero p{color:#cbd5e1;margin-bottom:20px;}
 
 /* SECTIONS */
 .section{
@@ -100,39 +85,52 @@ header h2{
   border-radius:14px;
   transition:0.3s;
 }
-
 .card:hover{
   transform:translateY(-8px);
   background:#263244;
 }
 
-/* PRICING */
+/* PRICE */
 .price{
-  font-size:26px;
   color:#60a5fa;
+  font-size:24px;
   margin:10px 0;
 }
 
-/* CHAT */
-.chatbot{
+/* CHATBOT */
+#chatbot{
   position:fixed;
   bottom:20px;
   right:20px;
-  width:250px;
-  background:#1e293b;
-  padding:15px;
-  border-radius:12px;
 }
 
-.chatbot a{
-  display:block;
+#chatbox{
+  display:none;
+  width:220px;
+  background:#1e293b;
+  padding:12px;
+  border-radius:12px;
   margin-top:10px;
-  background:#25d366;
-  padding:10px;
-  text-align:center;
+}
+
+#chatbot button{
+  background:#2563eb;
   color:white;
-  text-decoration:none;
-  border-radius:8px;
+  border:none;
+  padding:10px;
+  border-radius:10px;
+  cursor:pointer;
+  width:100%;
+}
+
+/* ANIMATION */
+.section,.card{
+  animation:fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(20px);}
+  to{opacity:1;transform:translateY(0);}
 }
 
 /* FOOTER */
@@ -140,8 +138,6 @@ footer{
   text-align:center;
   padding:20px;
   color:#94a3b8;
-  background:#0f172a;
-  margin-top:50px;
 }
 
 </style>
@@ -154,47 +150,44 @@ footer{
   <h2>Elevate Digital Services</h2>
 
   <a class="btn" href="https://calendly.com/loiejanpabalate/30minher" target="_blank">
-    Book Demo
+    Book Call
   </a>
 </header>
 
 <!-- HERO -->
 <section class="hero">
-
-  <h1>We Build Systems That Grow Your Business</h1>
-
-  <p>Websites • Lead Generation • SDR Outreach • Appointment Setting</p>
+  <h1>We Build Systems That Generate Clients</h1>
+  <p>Websites • Leads • SDR Outreach • Automation • Appointment Setting</p>
 
   <a class="btn" href="https://calendly.com/loiejanpabalate/30minher" target="_blank">
-    Schedule a Call
+    Schedule Strategy Call
   </a>
-
 </section>
 
 <!-- SERVICES -->
 <section class="section">
-  <h2>Our Services</h2>
+  <h2>Services</h2>
 
   <div class="grid">
 
     <div class="card">
       <h3>Website Development</h3>
-      <p>High-converting business websites.</p>
+      <p>High-converting business websites</p>
     </div>
 
     <div class="card">
       <h3>Lead Generation</h3>
-      <p>We generate qualified leads daily.</p>
+      <p>Daily qualified leads</p>
     </div>
 
     <div class="card">
       <h3>SDR Outreach</h3>
-      <p>Cold outreach that gets replies.</p>
+      <p>Cold outreach systems</p>
     </div>
 
     <div class="card">
       <h3>Appointment Setting</h3>
-      <p>We book calls directly to your calendar.</p>
+      <p>We book meetings for you</p>
     </div>
 
   </div>
@@ -202,20 +195,20 @@ footer{
 
 <!-- PRICING -->
 <section class="section">
-  <h2>Pricing Plans</h2>
+  <h2>Pricing</h2>
 
   <div class="grid">
 
     <div class="card">
       <h3>Starter</h3>
       <div class="price">$199</div>
-      <p>Landing page + form</p>
+      <p>Landing page</p>
     </div>
 
     <div class="card">
-      <h3>Business</h3>
+      <h3>Growth</h3>
       <div class="price">$499</div>
-      <p>Website + SEO + leads</p>
+      <p>Website + leads</p>
     </div>
 
     <div class="card">
@@ -227,25 +220,25 @@ footer{
   </div>
 </section>
 
-<!-- TRUST -->
+<!-- QUALIFICATION -->
 <section class="section">
-  <h2>Why Choose Us</h2>
+  <h2>Is This For You?</h2>
 
   <div class="grid">
 
     <div class="card">
-      <h3>Fast Delivery</h3>
-      <p>3–7 day turnaround</p>
+      <h3>✔ Yes</h3>
+      <p>You want more clients</p>
     </div>
 
     <div class="card">
-      <h3>Real Results</h3>
-      <p>Focused on conversions</p>
+      <h3>✔ Yes</h3>
+      <p>You want automation</p>
     </div>
 
     <div class="card">
-      <h3>Support</h3>
-      <p>We respond quickly</p>
+      <h3>❌ No</h3>
+      <p>You only want cheap work</p>
     </div>
 
   </div>
@@ -253,18 +246,36 @@ footer{
 
 <!-- CTA -->
 <section class="section">
-  <h2>Ready to Grow Your Business?</h2>
+  <h2>Ready to Grow?</h2>
+
   <a class="btn" href="https://calendly.com/loiejanpabalate/30minher" target="_blank">
-    Book Your Free Call
+    Book Free Call
   </a>
 </section>
 
 <!-- CHATBOT -->
-<div class="chatbot">
-  <p><b>Need Help?</b></p>
-  <p>Talk to us on WhatsApp</p>
-  <a href="https://wa.me/639515915083">Start Chat</a>
+<div id="chatbot">
+  <button onclick="toggleChat()">💬 Chat</button>
+
+  <div id="chatbox">
+    <p><b>Assistant 🤖</b></p>
+
+    <button onclick="window.open('https://calendly.com/loiejanpabalate/30minher')">
+      Book Call
+    </button>
+
+    <button onclick="window.open('https://wa.me/639515915083')">
+      WhatsApp
+    </button>
+  </div>
 </div>
+
+<script>
+function toggleChat(){
+  let box = document.getElementById("chatbox");
+  box.style.display = box.style.display === "block" ? "none" : "block";
+}
+</script>
 
 <!-- FOOTER -->
 <footer>
