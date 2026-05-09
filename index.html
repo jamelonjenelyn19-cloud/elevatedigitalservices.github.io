@@ -4,16 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Elevate Digital Services | Agency Empire System</title>
-
-<meta name="description" content="We build client acquisition systems that generate leads, automate outreach, and scale businesses predictably.">
-<meta name="keywords" content="lead generation agency, SDR outreach, appointment setting, automation systems">
+<title>Elevate Digital Services | Final Boss Agency</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 
-*{margin:0;padding:0;box-sizing:border-box;font-family:Inter;}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Inter;
+}
 
 body{
   background:#0b1220;
@@ -28,8 +30,9 @@ header{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:18px 25px;
+  padding:18px 30px;
   background:#0f172a;
+  border-bottom:1px solid rgba(255,255,255,0.05);
 }
 
 /* BUTTON */
@@ -52,26 +55,33 @@ header{
 .hero{
   text-align:center;
   padding:140px 20px;
-  background:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),
-  url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d');
+  background:
+    linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),
+    url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d');
   background-size:cover;
   background-position:center;
 }
 
 .hero h1{
-  font-size:48px;
-  margin-bottom:10px;
+  font-size:52px;
+  margin-bottom:15px;
 }
 
 .hero p{
   color:#cbd5e1;
-  margin-bottom:20px;
+  font-size:18px;
+  margin-bottom:25px;
 }
 
 /* SECTION */
 .section{
-  padding:80px 20px;
+  padding:90px 20px;
   text-align:center;
+}
+
+.section h2{
+  font-size:32px;
+  margin-bottom:30px;
 }
 
 /* GRID */
@@ -88,21 +98,35 @@ header{
   background:#1e293b;
   padding:25px;
   border-radius:14px;
+  transition:0.3s;
 }
 
-/* FORM */
-form{
-  max-width:500px;
+.card:hover{
+  transform:translateY(-5px);
+}
+
+/* IMAGE SECTION */
+.image-showcase{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:15px;
+  max-width:1100px;
   margin:auto;
-  display:flex;
-  flex-direction:column;
-  gap:10px;
 }
 
-input{
-  padding:12px;
-  border-radius:8px;
-  border:none;
+.image-showcase img{
+  width:100%;
+  border-radius:14px;
+  height:220px;
+  object-fit:cover;
+}
+
+/* PRICING */
+.price{
+  font-size:28px;
+  font-weight:bold;
+  margin:10px 0;
+  color:#60a5fa;
 }
 
 /* CHATBOT */
@@ -114,7 +138,7 @@ input{
 
 #box{
   display:none;
-  width:270px;
+  width:260px;
   background:#1e293b;
   padding:12px;
   border-radius:12px;
@@ -126,6 +150,7 @@ footer{
   text-align:center;
   padding:25px;
   color:#94a3b8;
+  border-top:1px solid rgba(255,255,255,0.05);
 }
 
 </style>
@@ -144,89 +169,107 @@ footer{
 
 <!-- HERO -->
 <section class="hero">
-  <h1>We Build Client Acquisition Empires</h1>
-
-  <p>We don’t build websites. We build systems that bring clients automatically.</p>
+  <h1>We Build Client Acquisition Systems</h1>
+  <p>High-ticket lead generation, automation & conversion funnels for serious businesses.</p>
 
   <a class="btn" href="https://calendly.com/loiejanpabalate/30minher" target="_blank">
-    Get Strategy Session
+    Get Strategy Call
   </a>
 </section>
 
-<!-- AUTHORITY -->
+<!-- IMAGE SHOWCASE -->
 <section class="section">
-  <h2>What We Specialize In</h2>
+  <h2>Agency Execution Style</h2>
 
-  <div class="grid">
-    <div class="card">
-      <h3>Lead Generation Systems</h3>
-      <p>Predictable client flow</p>
-    </div>
+  <div class="image-showcase">
 
-    <div class="card">
-      <h3>SDR Outreach Automation</h3>
-      <p>Cold outreach that books meetings</p>
-    </div>
+    <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984">
+    <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72">
+    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c">
 
-    <div class="card">
-      <h3>Conversion Websites</h3>
-      <p>Funnels designed to sell</p>
-    </div>
   </div>
 </section>
 
-<!-- OFFER STACK -->
+<!-- SERVICES -->
 <section class="section">
-  <h2>Our System Stack</h2>
+  <h2>What We Do</h2>
 
   <div class="grid">
 
     <div class="card">
-      <h3>1. Traffic</h3>
-      <p>SEO / Ads / Outreach</p>
+      <h3>Lead Generation</h3>
+      <p>We bring you consistent clients.</p>
     </div>
 
     <div class="card">
-      <h3>2. Funnel</h3>
-      <p>Landing page + chatbot + form</p>
+      <h3>SDR Outreach</h3>
+      <p>Cold outreach that books calls.</p>
     </div>
 
     <div class="card">
-      <h3>3. CRM</h3>
-      <p>Google Sheets pipeline</p>
-    </div>
-
-    <div class="card">
-      <h3>4. Closing</h3>
-      <p>Calendly + WhatsApp</p>
+      <h3>Funnels</h3>
+      <p>High converting landing systems.</p>
     </div>
 
   </div>
 </section>
 
-<!-- LEAD FORM -->
+<!-- PRICING -->
 <section class="section">
-  <h2>Get Free Growth Plan</h2>
+  <h2>Simple Pricing</h2>
 
-  <form action="https://formsubmit.co/loiejanpabalate@gmail.com" method="POST">
+  <div class="grid">
 
-    <input type="text" name="name" placeholder="Name" required>
-    <input type="email" name="email" placeholder="Email" required>
-    <input type="text" name="goal" placeholder="What are you trying to achieve?" required>
+    <div class="card">
+      <h3>Starter</h3>
+      <div class="price">$199</div>
+      <p>Landing page + setup</p>
+    </div>
 
-    <button class="btn" type="submit">
-      Get Strategy
-    </button>
+    <div class="card">
+      <h3>Business</h3>
+      <div class="price">$499</div>
+      <p>Website + leads system</p>
+    </div>
 
-  </form>
+    <div class="card">
+      <h3>Elite</h3>
+      <div class="price">$999+</div>
+      <p>Full automation system</p>
+    </div>
 
+  </div>
+</section>
+
+<!-- TRUST -->
+<section class="section">
+  <h2>Why Clients Choose Us</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>Fast Delivery</h3>
+      <p>3–7 day delivery time</p>
+    </div>
+
+    <div class="card">
+      <h3>Real Results</h3>
+      <p>Focus on leads, not just design</p>
+    </div>
+
+    <div class="card">
+      <h3>Support</h3>
+      <p>Always available via WhatsApp</p>
+    </div>
+
+  </div>
 </section>
 
 <!-- CTA -->
 <section class="section">
-  <h2>Ready to Build Your Client Empire?</h2>
+  <h2>Ready to Build Your System?</h2>
 
-  <a class="btn" href="https://calendly.com/loiejanpabalate/30minher" target="_blank">
+  <a class="btn" href="https://calendly.com/loiejanpabalate/30minher">
     Book Strategy Call
   </a>
 </section>
@@ -237,13 +280,13 @@ footer{
 
   <div id="box">
 
-    <p><b>Empire Assistant 🤖</b></p>
+    <p><b>Final Boss Assistant 🤖</b></p>
 
-    <button onclick="window.open('https://calendly.com/loiejanpabalate/30minher')" class="btn" style="width:100%;margin-top:5px;">
+    <button class="btn" onclick="window.open('https://calendly.com/loiejanpabalate/30minher')" style="width:100%;margin-top:5px;">
       Book Call
     </button>
 
-    <button onclick="window.open('https://wa.me/639515915083')" class="btn" style="width:100%;margin-top:5px;">
+    <button class="btn" onclick="window.open('https://wa.me/639515915083')" style="width:100%;margin-top:5px;">
       WhatsApp
     </button>
 
@@ -259,7 +302,7 @@ function toggle(){
 
 <!-- FOOTER -->
 <footer>
-  © 2026 Elevate Digital Services | Agency Empire System
+  © 2026 Elevate Digital Services | Final Boss System
 </footer>
 
 </body>
