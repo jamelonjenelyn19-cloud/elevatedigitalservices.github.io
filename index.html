@@ -4,11 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Elevate Digital Services | Growth Agency</title>
+<title>Elevate Digital Services | Elite Growth Agency</title>
 
-<meta name="description" content="We help businesses generate leads, automate outreach, and book more clients through high-converting websites and systems.">
+<meta name="description" content="We build lead generation systems, websites, and automation that bring predictable clients to businesses.">
 
-<meta name="keywords" content="lead generation agency, website developer, SDR outreach, appointment setter, digital marketing agency">
+<meta name="keywords" content="lead generation agency, SDR outreach, appointment setting, website developer, digital marketing">
+
+<!-- Google Analytics (replace later if you want tracking) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-XXXXXXX');
+</script>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -31,7 +40,6 @@ header{
   align-items:center;
   padding:18px 25px;
   background:#0f172a;
-  border-bottom:1px solid rgba(255,255,255,0.05);
 }
 
 /* BUTTON */
@@ -42,9 +50,7 @@ header{
   border-radius:10px;
   text-decoration:none;
   transition:0.3s;
-  display:inline-block;
 }
-
 .btn:hover{
   transform:scale(1.05);
   background:#1d4ed8;
@@ -60,25 +66,13 @@ header{
   background-position:center;
 }
 
-.hero h1{
-  font-size:48px;
-  margin-bottom:15px;
-}
-
-.hero p{
-  color:#cbd5e1;
-  font-size:18px;
-  margin-bottom:25px;
-}
+.hero h1{font-size:48px;margin-bottom:15px;}
+.hero p{color:#cbd5e1;margin-bottom:25px;}
 
 /* SECTION */
 .section{
   padding:90px 20px;
   text-align:center;
-}
-
-.section h2{
-  margin-bottom:30px;
 }
 
 /* GRID */
@@ -95,24 +89,6 @@ header{
   background:#1e293b;
   padding:25px;
   border-radius:14px;
-  transition:0.3s;
-}
-
-.card:hover{
-  transform:translateY(-8px);
-  background:#273449;
-}
-
-/* PRICE */
-.price{
-  color:#60a5fa;
-  font-size:24px;
-  margin:10px 0;
-}
-
-/* QUALIFY */
-.bad{
-  color:#f87171;
 }
 
 /* FORM */
@@ -130,7 +106,7 @@ input{
   border:none;
 }
 
-/* CHAT */
+/* CHATBOT */
 #chatbot{
   position:fixed;
   bottom:20px;
@@ -139,21 +115,11 @@ input{
 
 #chatbox{
   display:none;
-  width:240px;
+  width:260px;
   background:#1e293b;
   padding:12px;
   border-radius:12px;
   margin-top:10px;
-}
-
-#chatbot button{
-  background:#2563eb;
-  color:white;
-  border:none;
-  padding:10px;
-  border-radius:10px;
-  cursor:pointer;
-  width:100%;
 }
 
 /* FOOTER */
@@ -168,7 +134,6 @@ footer{
 
 <body>
 
-<!-- HEADER -->
 <header>
   <h2>Elevate Digital Services</h2>
 
@@ -179,130 +144,92 @@ footer{
 
 <!-- HERO -->
 <section class="hero">
-  <h1>We Help Businesses Get Predictable Clients</h1>
-
+  <h1>We Build Systems That Print Clients</h1>
   <p>Lead Generation • SDR Outreach • Websites • Automation Systems</p>
 
   <a class="btn" href="https://calendly.com/loiejanpabalate/30minher" target="_blank">
-    Get Free Strategy Session
+    Get Free Strategy
   </a>
+</section>
+
+<!-- TRUST -->
+<section class="section">
+  <h2>Why Clients Choose Us</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Predictable Leads</h3>
+      <p>We build systems, not just websites</p>
+    </div>
+
+    <div class="card">
+      <h3>Fast Setup</h3>
+      <p>Launch in 3–7 days</p>
+    </div>
+
+    <div class="card">
+      <h3>Conversion Focused</h3>
+      <p>Everything is built to generate sales</p>
+    </div>
+  </div>
 </section>
 
 <!-- SERVICES -->
 <section class="section">
-  <h2>What We Do</h2>
+  <h2>Elite Services</h2>
 
   <div class="grid">
-
     <div class="card">
-      <h3>Lead Generation</h3>
-      <p>We bring qualified buyers to your business.</p>
+      <h3>Lead Engine</h3>
+      <p>Automated client acquisition system</p>
     </div>
 
     <div class="card">
       <h3>SDR Outreach</h3>
-      <p>Cold outreach that converts into calls.</p>
+      <p>Cold outreach that books meetings</p>
     </div>
 
     <div class="card">
-      <h3>Website Systems</h3>
-      <p>High-converting websites built for sales.</p>
+      <h3>Website Funnels</h3>
+      <p>High converting landing systems</p>
     </div>
-
-    <div class="card">
-      <h3>Appointment Setting</h3>
-      <p>We book meetings directly into your calendar.</p>
-    </div>
-
   </div>
 </section>
 
-<!-- PRICING -->
+<!-- LEAD CRM FORM -->
 <section class="section">
-  <h2>Investment Plans</h2>
-
-  <div class="grid">
-
-    <div class="card">
-      <h3>Starter</h3>
-      <div class="price">$199</div>
-      <p>Basic landing page system</p>
-    </div>
-
-    <div class="card">
-      <h3>Growth</h3>
-      <div class="price">$499</div>
-      <p>Website + lead system</p>
-    </div>
-
-    <div class="card">
-      <h3>Elite</h3>
-      <div class="price">$999+</div>
-      <p>Full automation + funnel system</p>
-    </div>
-
-  </div>
-</section>
-
-<!-- QUALIFICATION -->
-<section class="section">
-  <h2>Is This For You?</h2>
-
-  <div class="grid">
-
-    <div class="card">
-      <h3>✔ YES IF</h3>
-      <p>You want more clients consistently</p>
-    </div>
-
-    <div class="card">
-      <h3>✔ YES IF</h3>
-      <p>You are ready to invest in growth</p>
-    </div>
-
-    <div class="card">
-      <h3 class="bad">✘ NOT IF</h3>
-      <p>You only want cheap “basic websites”</p>
-    </div>
-
-  </div>
-</section>
-
-<!-- LEAD FORM -->
-<section class="section">
-  <h2>Get Your Free Strategy Plan</h2>
+  <h2>Get Your Free Growth Plan</h2>
 
   <form action="https://formsubmit.co/loiejanpabalate@gmail.com" method="POST">
 
-    <input type="text" name="name" placeholder="Your Name" required>
-
-    <input type="email" name="email" placeholder="Your Email" required>
-
-    <input type="text" name="service" placeholder="What do you need?" required>
+    <input type="text" name="name" placeholder="Name" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="text" name="goal" placeholder="What do you want to achieve?" required>
 
     <button class="btn" type="submit">
-      Request Strategy
+      Submit Request
     </button>
 
   </form>
 
 </section>
 
-<!-- CTA -->
+<!-- BOOKING -->
 <section class="section">
-  <h2>Ready to Scale Your Business?</h2>
+  <h2>Book Strategy Call</h2>
 
   <a class="btn" href="https://calendly.com/loiejanpabalate/30minher" target="_blank">
-    Book Strategy Call
+    Open Calendar
   </a>
+
 </section>
 
 <!-- CHATBOT -->
 <div id="chatbot">
-  <button onclick="toggleChat()">💬 Chat</button>
+  <button onclick="toggleChat()" class="btn">Chat</button>
 
   <div id="chatbox">
-    <p><b>Sales Assistant 🤖</b></p>
+    <p><b>AI Sales Assistant 🤖</b></p>
 
     <button onclick="window.open('https://calendly.com/loiejanpabalate/30minher')">
       Book Call
@@ -321,9 +248,8 @@ function toggleChat(){
 }
 </script>
 
-<!-- FOOTER -->
 <footer>
-  © 2026 Elevate Digital Services | Growth Agency
+  © 2026 Elevate Digital Services | Elite Growth System
 </footer>
 
 </body>
