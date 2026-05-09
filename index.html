@@ -1,70 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Elevate Digital Services</title>
+<title>Elevate Digital Services</title>
 
-  <style>
-    body{
-      margin:0;
-      font-family:Arial, sans-serif;
-      background:#0f172a;
-      color:white;
-      text-align:center;
-    }
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    header{
-      padding:20px;
-      background:#111827;
-    }
+<!-- Animations -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
-    h1{
-      font-size:45px;
-      margin-top:100px;
-    }
+<style>
 
-    p{
-      color:#cbd5e1;
-      font-size:18px;
-    }
+html { scroll-behavior: smooth; }
 
-    .btn{
-      display:inline-block;
-      margin-top:25px;
-      padding:14px 25px;
-      background:#2563eb;
-      color:white;
-      border-radius:8px;
-      text-decoration:none;
-    }
+body{
+  margin:0;
+  font-family:Inter;
+  background:#0b1220;
+  color:white;
+}
 
-    section{
-      padding:80px 20px;
-    }
+/* HEADER */
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 40px;
+  background:#0f172a;
+}
 
-    .services{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-      gap:20px;
-      max-width:1000px;
-      margin:auto;
-      margin-top:40px;
-    }
+/* HERO */
+.hero{
+  text-align:center;
+  padding:100px 20px;
+}
 
-    .card{
-      background:#1e293b;
-      padding:25px;
-      border-radius:12px;
-    }
+.hero h1{
+  font-size:48px;
+}
 
-    footer{
-      padding:20px;
-      background:#111827;
-      color:#94a3b8;
-    }
-  </style>
+.hero p{
+  color:#cbd5e1;
+  font-size:18px;
+}
+
+/* BUTTON */
+.btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:14px 28px;
+  background:#2563eb;
+  color:white;
+  border-radius:10px;
+  text-decoration:none;
+}
+
+/* SECTIONS */
+.section{
+  padding:80px 20px;
+  text-align:center;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+  max-width:1100px;
+  margin:auto;
+  margin-top:40px;
+}
+
+/* CARD */
+.card{
+  background:#1e293b;
+  padding:25px;
+  border-radius:14px;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* CTA */
+.cta{
+  text-align:center;
+  padding:80px 20px;
+  background:#111827;
+}
+
+/* CHATBOT */
+.chatbot{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  width:280px;
+  background:#1e293b;
+  padding:15px;
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+
+.chatbot a{
+  display:block;
+  margin-top:10px;
+  background:#2563eb;
+  color:white;
+  text-align:center;
+  padding:10px;
+  border-radius:8px;
+  text-decoration:none;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:20px;
+  background:#0f172a;
+  color:#94a3b8;
+}
+
+</style>
 </head>
 
 <body>
@@ -73,46 +134,119 @@
   <h2>Elevate Digital Services</h2>
 </header>
 
-<section>
-  <h1>Grow Your Business Online</h1>
+<!-- HERO -->
+<section class="hero">
+  <h1 class="animate__animated animate__fadeInDown">
+    We Build Systems That Grow Your Business
+  </h1>
 
-  <p>
-    Website Development • Lead Generation • SDR Outreach • Appointment Setting
+  <p class="animate__animated animate__fadeInUp">
+    Websites • Leads • SDR Outreach • Appointment Setting • Automation
   </p>
 
-  <a class="btn" href="https://wa.me/639515915083">
-    Book Now
+  <a class="btn" href="https://calendly.com/YOURNAME">
+    Book a Free Call
   </a>
 </section>
 
-<section>
+<!-- SERVICES -->
+<section class="section">
   <h2>Our Services</h2>
 
-  <div class="services">
+  <div class="grid">
 
     <div class="card">
-      <h3>Website Development</h3>
-      <p>Modern responsive business websites.</p>
+      <h3>High-Converting Websites</h3>
+      <p>Modern websites that turn visitors into clients.</p>
     </div>
 
     <div class="card">
-      <h3>Lead Generation</h3>
-      <p>Helping businesses find qualified leads.</p>
+      <h3>Lead Generation Systems</h3>
+      <p>Daily qualified leads for your business.</p>
+    </div>
+
+    <div class="card">
+      <h3>SDR Outreach</h3>
+      <p>Cold outreach that generates real sales calls.</p>
     </div>
 
     <div class="card">
       <h3>Appointment Setting</h3>
-      <p>Booking meetings with potential clients.</p>
-    </div>
-
-    <div class="card">
-      <h3>Customer Support</h3>
-      <p>Professional customer service assistance.</p>
+      <p>We book meetings directly into your calendar.</p>
     </div>
 
   </div>
 </section>
 
+<!-- PRICING -->
+<section class="section">
+  <h2>Pricing Plans</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>Starter</h3>
+      <p>$199</p>
+      <p>Basic website setup</p>
+    </div>
+
+    <div class="card">
+      <h3>Growth</h3>
+      <p>$499</p>
+      <p>Website + lead system</p>
+    </div>
+
+    <div class="card">
+      <h3>Premium</h3>
+      <p>$999+</p>
+      <p>Full automation system</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CASE STUDIES -->
+<section class="section">
+  <h2>Case Studies</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>Lead System</h3>
+      <p>Generated 120+ leads in 14 days.</p>
+    </div>
+
+    <div class="card">
+      <h3>Website Build</h3>
+      <p>High-converting landing page for SaaS client.</p>
+    </div>
+
+    <div class="card">
+      <h3>Automation</h3>
+      <p>Improved booking rate by 40%.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <h2>Ready to Grow Your Business?</h2>
+  <p>Let’s build your system today.</p>
+
+  <a class="btn" href="https://wa.me/639515915083">
+    Contact Now
+  </a>
+</section>
+
+<!-- CHATBOT -->
+<div class="chatbot">
+  <p><b>AI Assistant 🤖</b></p>
+  <p>Need help or want to book a service?</p>
+  <a href="https://wa.me/639515915083">Chat Now</a>
+</div>
+
+<!-- FOOTER -->
 <footer>
   © 2026 Elevate Digital Services
 </footer>
