@@ -4,20 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Elevate Digital Services | Elite Growth Agency</title>
+<title>Elevate Digital Services | Agency Empire System</title>
 
-<meta name="description" content="We build lead generation systems, websites, and automation that bring predictable clients to businesses.">
-
-<meta name="keywords" content="lead generation agency, SDR outreach, appointment setting, website developer, digital marketing">
-
-<!-- Google Analytics (replace later if you want tracking) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-XXXXXXX');
-</script>
+<meta name="description" content="We build client acquisition systems that generate leads, automate outreach, and scale businesses predictably.">
+<meta name="keywords" content="lead generation agency, SDR outreach, appointment setting, automation systems">
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -50,7 +40,9 @@ header{
   border-radius:10px;
   text-decoration:none;
   transition:0.3s;
+  display:inline-block;
 }
+
 .btn:hover{
   transform:scale(1.05);
   background:#1d4ed8;
@@ -66,12 +58,19 @@ header{
   background-position:center;
 }
 
-.hero h1{font-size:48px;margin-bottom:15px;}
-.hero p{color:#cbd5e1;margin-bottom:25px;}
+.hero h1{
+  font-size:48px;
+  margin-bottom:10px;
+}
+
+.hero p{
+  color:#cbd5e1;
+  margin-bottom:20px;
+}
 
 /* SECTION */
 .section{
-  padding:90px 20px;
+  padding:80px 20px;
   text-align:center;
 }
 
@@ -113,9 +112,9 @@ input{
   right:20px;
 }
 
-#chatbox{
+#box{
   display:none;
-  width:260px;
+  width:270px;
   background:#1e293b;
   padding:12px;
   border-radius:12px;
@@ -134,6 +133,7 @@ footer{
 
 <body>
 
+<!-- HEADER -->
 <header>
   <h2>Elevate Digital Services</h2>
 
@@ -144,112 +144,122 @@ footer{
 
 <!-- HERO -->
 <section class="hero">
-  <h1>We Build Systems That Print Clients</h1>
-  <p>Lead Generation • SDR Outreach • Websites • Automation Systems</p>
+  <h1>We Build Client Acquisition Empires</h1>
+
+  <p>We don’t build websites. We build systems that bring clients automatically.</p>
 
   <a class="btn" href="https://calendly.com/loiejanpabalate/30minher" target="_blank">
-    Get Free Strategy
+    Get Strategy Session
   </a>
 </section>
 
-<!-- TRUST -->
+<!-- AUTHORITY -->
 <section class="section">
-  <h2>Why Clients Choose Us</h2>
+  <h2>What We Specialize In</h2>
 
   <div class="grid">
     <div class="card">
-      <h3>Predictable Leads</h3>
-      <p>We build systems, not just websites</p>
+      <h3>Lead Generation Systems</h3>
+      <p>Predictable client flow</p>
     </div>
 
     <div class="card">
-      <h3>Fast Setup</h3>
-      <p>Launch in 3–7 days</p>
-    </div>
-
-    <div class="card">
-      <h3>Conversion Focused</h3>
-      <p>Everything is built to generate sales</p>
-    </div>
-  </div>
-</section>
-
-<!-- SERVICES -->
-<section class="section">
-  <h2>Elite Services</h2>
-
-  <div class="grid">
-    <div class="card">
-      <h3>Lead Engine</h3>
-      <p>Automated client acquisition system</p>
-    </div>
-
-    <div class="card">
-      <h3>SDR Outreach</h3>
+      <h3>SDR Outreach Automation</h3>
       <p>Cold outreach that books meetings</p>
     </div>
 
     <div class="card">
-      <h3>Website Funnels</h3>
-      <p>High converting landing systems</p>
+      <h3>Conversion Websites</h3>
+      <p>Funnels designed to sell</p>
     </div>
   </div>
 </section>
 
-<!-- LEAD CRM FORM -->
+<!-- OFFER STACK -->
 <section class="section">
-  <h2>Get Your Free Growth Plan</h2>
+  <h2>Our System Stack</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>1. Traffic</h3>
+      <p>SEO / Ads / Outreach</p>
+    </div>
+
+    <div class="card">
+      <h3>2. Funnel</h3>
+      <p>Landing page + chatbot + form</p>
+    </div>
+
+    <div class="card">
+      <h3>3. CRM</h3>
+      <p>Google Sheets pipeline</p>
+    </div>
+
+    <div class="card">
+      <h3>4. Closing</h3>
+      <p>Calendly + WhatsApp</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- LEAD FORM -->
+<section class="section">
+  <h2>Get Free Growth Plan</h2>
 
   <form action="https://formsubmit.co/loiejanpabalate@gmail.com" method="POST">
 
     <input type="text" name="name" placeholder="Name" required>
     <input type="email" name="email" placeholder="Email" required>
-    <input type="text" name="goal" placeholder="What do you want to achieve?" required>
+    <input type="text" name="goal" placeholder="What are you trying to achieve?" required>
 
     <button class="btn" type="submit">
-      Submit Request
+      Get Strategy
     </button>
 
   </form>
 
 </section>
 
-<!-- BOOKING -->
+<!-- CTA -->
 <section class="section">
-  <h2>Book Strategy Call</h2>
+  <h2>Ready to Build Your Client Empire?</h2>
 
   <a class="btn" href="https://calendly.com/loiejanpabalate/30minher" target="_blank">
-    Open Calendar
+    Book Strategy Call
   </a>
-
 </section>
 
 <!-- CHATBOT -->
 <div id="chatbot">
-  <button onclick="toggleChat()" class="btn">Chat</button>
+  <button class="btn" onclick="toggle()">💬 AI Assistant</button>
 
-  <div id="chatbox">
-    <p><b>AI Sales Assistant 🤖</b></p>
+  <div id="box">
 
-    <button onclick="window.open('https://calendly.com/loiejanpabalate/30minher')">
+    <p><b>Empire Assistant 🤖</b></p>
+
+    <button onclick="window.open('https://calendly.com/loiejanpabalate/30minher')" class="btn" style="width:100%;margin-top:5px;">
       Book Call
     </button>
 
-    <button onclick="window.open('https://wa.me/639515915083')">
+    <button onclick="window.open('https://wa.me/639515915083')" class="btn" style="width:100%;margin-top:5px;">
       WhatsApp
     </button>
+
   </div>
 </div>
 
 <script>
-function toggleChat(){
-  let box = document.getElementById("chatbox");
-  box.style.display = box.style.display === "block" ? "none" : "block";
+function toggle(){
+  let box=document.getElementById("box");
+  box.style.display = box.style.display==="block"?"none":"block";
 }
 </script>
 
+<!-- FOOTER -->
 <footer>
-  © 2026 Elevate Digital Services | Elite Growth System
+  © 2026 Elevate Digital Services | Agency Empire System
 </footer>
 
 </body>
